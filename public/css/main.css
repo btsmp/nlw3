@@ -17,37 +17,22 @@ textarea {
   font: 400 1.8rem/1 "Nunito", sans-serif;
 }
 
-#page-landing {
-  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%) no-repeat;
-
-  text-align: center;
-  min-height: 100vh;
-
-  display: flex;
-
-  align-items: center;
+#logo {
+  animation-delay: 50ms;
 }
 
-#container {
-  margin: auto;
+.location {
+  animation-delay: 100ms;
 }
 
-.location,
-h1,
+main h1 {
+  animation-delay: 150ms;
+}
+
 .visit p {
-  height: 16vh;
+  animation-delay: 200ms;
 }
+
 .visit a {
-  width: 8rem;
-  height: 8rem;
-  background: #ffd666;
-
-  border: none;
-  border-radius: 3rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin: auto;
+  animation-delay: 250ms;
 }
