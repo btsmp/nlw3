@@ -41,12 +41,10 @@ h1,
 }
 
 @media (min-width: 760px) {
-  
   #container {
     background: url("../images/bg.svg") no-repeat 80% /
       clamp(30rem, 54vw, 55rem);
     padding: 5rem 2rem;
-
   }
 
   header {

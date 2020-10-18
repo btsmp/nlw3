@@ -11,19 +11,19 @@
 
 @keyframes right {
   from {
-    transform: translateX(-100%)
+    transform: translateX(-100%);
   }
   to {
-    transform: translateY(0)
+    transform: translateY(0);
   }
 }
 
 @keyframes appear {
   from {
-    opacity: 0
+    opacity: 0;
   }
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -41,5 +41,5 @@
 .animate-appear {
   animation-name: appear;
   animation-duration: 400ms;
-  animation-fill-mode: backwards
+  animation-fill-mode: backwards;
 }

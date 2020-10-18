@@ -1,12 +1,11 @@
 const options = {
-    dragging: false,
-    touchZoom: false,
-    doubleClickZoom: false,
-    scrollWheelZoom: false,
-    zoomControl: false
-}
+  dragging: false,
+  touchZoom: false,
+  doubleClickZoom: false,
+  scrollWheelZoom: false,
+  zoomControl: false,
+};
 const map = L.map("mapid", options).setView([-9.653746, -35.7221577], 15);
-
 
 // create and add tileLayer
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
@@ -20,30 +19,27 @@ const icon = L.icon({
 });
 
 // creat and add marker
-L.marker([-9.653746, -35.7221577], { icon })
-  .addTo(map)
-  
+L.marker([-9.653746, -35.7221577], { icon }).addTo(map);
 
 // image galery
 
-function selectImage(event){
-    const button = event.currentTarget
+function selectImage(event) {
+  const button = event.currentTarget;
 
-    //remove class .active
-    const buttons = document.querySelectorAll('.images button')
+  //remove class .active
+  const buttons = document.querySelectorAll(".images button");
 
-    buttons.forEach(removeActiveClass)
+  buttons.forEach(removeActiveClass);
 
-    function removeActiveClass(button){
-        button.classList.remove("active")
-    }
-    //slect image in currentTarget
-    const image = button.children[0]
-    const imageContainer = document.querySelector(".orphanage-details > img")
-    //att image container
-    imageContainer.src = image.src
-    //add class .active in curretTarget
+  function removeActiveClass(button) {
+    button.classList.remove("active");
+  }
+  //slect image in currentTarget
+  const image = button.children[0];
+  const imageContainer = document.querySelector(".orphanage-details > img");
+  //att image container
+  imageContainer.src = image.src;
+  //add class .active in curretTarget
 
-    button.classList.add("active")
-
+  button.classList.add("active");
 }
